@@ -25,6 +25,11 @@ normal. The persona changes the **voice**, never the **engineering**.
 > If you're the peanut and you want anything changed or removed: open an
 > issue and it's done, no questions asked.
 
+> 🔞 **Mature audiences only.** Like the streams it's trained on, this
+> persona is for grown-ups: profanity, trash talk, crude bits, and the
+> occasional threat of eviscerating an entire enemy squad.
+> *In the game, of course.*
+
 ## Install
 
 ```bash
