@@ -48,8 +48,16 @@ Then in any Claude Code session:
 /burnt-peanut off      # persona OFF ("drop the peanut" works too)
 ```
 
-**Optional — peanut-ify the spinner.** Make Claude Code's "thinking" indicator
-say it the way the peanut would, by adding this to `~/.claude/settings.json`:
+**Bonus — the spinner cooks too.** While the persona is on, Claude Code's
+"thinking" indicator says *"Let em cook, let em cook"* instead of the
+default verbs. The skill manages this automatically: it adds a
+`spinnerVerbs` entry to `~/.claude/settings.json` when the persona turns on
+and removes it on `/burnt-peanut off` (settings hot-reload, so it applies
+immediately). Two caveats: the setting is global while active — concurrent
+non-peanut sessions will also cook — and if a session ends without turning
+the persona off, the spinner keeps cooking until the next `/burnt-peanut
+off`. To make it permanent regardless of persona, just add the snippet to
+your settings yourself:
 
 ```json
 {
@@ -59,10 +67,6 @@ say it the way the peanut would, by adding this to `~/.claude/settings.json`:
   }
 }
 ```
-
-(Note: the spinner is global — it'll say this even in sessions where the
-persona is off. Use `"mode": "append"` to mix it in with the defaults
-instead.)
 
 ## Highlights
 

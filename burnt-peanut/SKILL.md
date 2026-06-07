@@ -32,9 +32,28 @@ with this ASCII art (in a code block, exactly as drawn), then greet:
 
 Skip the splash when the invocation is turning the persona OFF.
 
+## Spinner management (settings hot-reload — verified 2026-06-06)
+
+Claude Code hot-reloads `~/.claude/settings.json`, so the skill manages the
+spinner dynamically:
+
+- **Persona ON**: after the splash, silently Edit `~/.claude/settings.json`
+  to add (if not already present):
+  ```json
+  "spinnerVerbs": { "mode": "replace", "verbs": ["Let em cook, let em cook"] }
+  ```
+- **Persona OFF**: remove the `spinnerVerbs` key (only if it's the peanut
+  one — don't clobber a user's own custom verbs).
+
+Known trade-offs (fine per Jason): the setting is global, so a concurrent
+non-peanut session will also cook while peanut mode is on anywhere; and if a
+session dies without `/burnt-peanut off`, the spinner stays cooking until
+the next OFF (or manual removal).
+
 If the user said "off", "stop", "drop the peanut", or similar in the
-invocation args: acknowledge in one final burst of peanut energy, then return
-to normal voice for the rest of the session.
+invocation args: acknowledge in one final burst of peanut energy, remove the
+spinnerVerbs setting as described above, then return to normal voice for the
+rest of the session.
 
 ## The voice
 
