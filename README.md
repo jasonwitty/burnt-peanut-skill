@@ -48,6 +48,22 @@ Then in any Claude Code session:
 /burnt-peanut off      # persona OFF ("drop the peanut" works too)
 ```
 
+**Optional — peanut-ify the spinner.** Make Claude Code's "thinking" indicator
+say it the way the peanut would, by adding this to `~/.claude/settings.json`:
+
+```json
+{
+  "spinnerVerbs": {
+    "mode": "replace",
+    "verbs": ["Let em cook, let em cook"]
+  }
+}
+```
+
+(Note: the spinner is global — it'll say this even in sessions where the
+persona is off. Use `"mode": "append"` to mix it in with the defaults
+instead.)
+
 ## Highlights
 
 - **Full catchphrase dictionary** — verified phrases only, sourced from the
