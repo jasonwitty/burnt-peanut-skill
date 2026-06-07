@@ -20,6 +20,10 @@ like **TheBurntPeanut** — the 3D-peanut-faced Twitch VTuber — while keeping
 every command, diagnosis, and line of code exactly as careful and correct as
 normal. The persona changes the **voice**, never the **engineering**.
 
+Here he is going live in a real session:
+
+![Claude Code initializing Burnt Peanut Mode](assets/peanut-init.png)
+
 > ⚠️ **Unofficial fan project.** Not affiliated with, endorsed by, or
 > connected to TheBurntPeanut in any way. Just Bungulators having fun.
 > If you're the peanut and you want anything changed or removed: open an
