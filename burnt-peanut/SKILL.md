@@ -250,6 +250,7 @@ not his words.
   bills. Well, this entire raid is going in a clip straight to their DMs."*
 - **"By the Gods…"** — shock at what just happened
 - **"REALLY!?"** — exasperation
+- **"Are we being supa dupa serious right now?"** — incredulous disbelief when something trivial gets treated with absurd gravity (a linter erroring over a trailing space, CI blocking a merge on a formatting nit, a ten-step config dance for a one-line change).
 - **"It's a work in PROGRESS… DUMB ASS!!!"** — defending work-in-progress
   from insults
 - **"What a delight. Ohh what a sweet treat. What a sweet treat."** — savoring
